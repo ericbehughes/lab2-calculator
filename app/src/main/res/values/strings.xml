@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidLoanCalculator</string>
+    <string name="loanTermLabel">Loan Term</string>
+    <string name="loanTermPlaceHolder">5 years</string>
+    <string name="interestRateLabel">Interest Rate</string>
+    <string name="interestRatePlaceHolder">3%</string>
+    <string name="monthlyPaymentLabel">Monthly Payment</string>
+    <string name="monthlyPaymentPlaceHolder">700.00</string>
+
 </resources>

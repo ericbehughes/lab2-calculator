@@ -4,26 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="ca.campbell.simplecalc.MainActivity">
-
+    android:background="@drawable/billclinton">
+    <!--start of loan amount-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:text="$"
+            />
 
         <EditText
             android:id="@+id/loanAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:textSize="40dp"
-            android:text="$10,000" />
+            android:text="10,000"
+            android:backgroundTint="@android:color/transparent"/>
 
     </LinearLayout>
+    <!--end of loan amount-->
     <!--start loan term -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,6 +94,16 @@
         </LinearLayout>
     </LinearLayout>
     <!--end interest rate-->
+
+
+    <Button
+        android:id="@+id/calculateLoanBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addNums"
+        android:text="Calculate" />
+
+
     <!--start monthly fee-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,8 +122,8 @@
                 android:gravity="center"
                 android:text="@string/monthlyPaymentLabel" />
 
-            <EditText
-                android:id="@+id/monthlyPaymentEditText"
+            <TextView
+                android:id="@+id/monthlyPaymentValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -112,19 +132,4 @@
         </LinearLayout>
     </LinearLayout>
     <!--start monthly fee-->
-
-    <Button
-        android:id="@+id/calculateLoanBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="addNums"
-        android:text="Calculate" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    </LinearLayout>
 </LinearLayout>
