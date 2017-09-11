@@ -48,17 +48,17 @@
 
             <TextView
                 android:id="@+id/loanTermLabel"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:gravity="center"
                 android:text="@string/loanTermLabel" />
 
             <EditText
                 android:id="@+id/loanTermValueEditText"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:inputType="numberDecimal"
                 android:textColorHint="@color/colorAccent"
                 android:text="@string/loanTermPlaceHolder" />
@@ -79,17 +79,19 @@
 
             <TextView
                 android:id="@+id/interestRateTextView"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:gravity="center"
                 android:text="@string/interestRateLabel" />
 
             <EditText
                 android:id="@+id/interestRateEditText"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight=".5"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
                 android:textColorHint="@color/colorAccent"
                 android:text="@string/interestRatePlaceHolder" />
         </LinearLayout>
@@ -112,18 +114,18 @@
         android:orientation="horizontal">
             <TextView
                 android:id="@+id/monthlyPaymentTextView"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:gravity="right"
                 android:text="@string/monthlyPaymentLabel"/>
 
             <TextView
                 android:id="@+id/monthlyPaymentValue"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
-                android:layout_weight="1"
+                android:layout_weight=".5"
                 android:textColorHint="@color/colorAccent"
                 android:text="@string/placeholderzero" />
 
@@ -140,19 +142,19 @@
 
         <TextView
             android:id="@+id/totalInterestPaidTextView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:gravity="right"
             android:text="@string/totalInterestPaidLabel" />
 
         <TextView
             android:id="@+id/totalInterestPaidValue"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:text="@string/placeholderzero"
             android:textColorHint="@color/colorAccent" />
     </LinearLayout>
@@ -165,18 +167,18 @@
 
         <TextView
             android:id="@+id/totalPaymentsTextView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:gravity="right"
             android:text="@string/loanAndInterestPaidLabel" />
 
         <TextView
             android:id="@+id/totalPaymentsValue"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
-            android:layout_weight="1"
+            android:layout_weight=".5"
             android:textColorHint="@color/colorAccent"
             android:text="@string/placeholderzero" />
     </LinearLayout>

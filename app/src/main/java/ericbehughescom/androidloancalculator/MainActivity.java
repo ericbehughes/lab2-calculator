@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         final double monthlyPayment = Math.round(this.lc.getMonthlyPayment());
         final double interestPaid = Math.round(this.lc.getTotalCostOfLoan() - loan);
-        final double loanAndInterest = Math.round(this.lc.getTotalCostOfLoan() + loan);
+        final double loanAndInterest = Math.round(this.lc.getTotalCostOfLoan());
 
         //create hashmap for showInterestPaidCalculation method
         Map<String,Object> payload = new HashMap<String,Object>();
