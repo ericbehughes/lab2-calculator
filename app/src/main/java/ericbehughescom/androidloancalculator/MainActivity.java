@@ -83,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
         //update view
         showInterestPaidCalculation(payload);
+
+        //some comment goes here
     }
 
     private void showInterestPaidCalculation(Map<String,Object> o )
